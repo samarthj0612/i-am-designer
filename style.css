@@ -1,0 +1,247 @@
+@font-face {
+  font-family: "gilroy";
+  src: url("fonts/Gilroy-Regular.otf");
+}
+@font-face {
+  font-family: "bizantheum";
+  src: url("fonts/bizantheum-font.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gilroy";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#sj-main {
+  position: relative;
+  width: 100%;
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 80px;
+  z-index: 99;
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.594);
+}
+nav div {
+  display: flex;
+  gap: 25px;
+  font-size: 20px;
+  color: white;
+  text-shadow: 0px 0px 15px black;
+}
+nav div a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 3px solid transparent;
+  padding: 10px;
+}
+nav div a:hover {
+  transition: all 0.5s;
+  border-color: rgb(229, 56, 60);
+}
+nav div i {
+  border: 3px solid transparent;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav div i:hover {
+  transition: all 0.5s;
+  border-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.main {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#main1 {
+  background-image: url(https://images.unsplash.com/photo-1497091071254-cc9b2ba7c48a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2074&q=80);
+  background-size: cover;
+  background-position: center;
+}
+#main1 #content {
+  height: 80%;
+  width: 45%;
+  /* border: 1px solid white; */
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  transform: translate(0%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 2vw;
+}
+#main1 #content h1 {
+  font-size: 8vw;
+  text-align: center;
+  line-height: 8vw;
+}
+#main1 #content p {
+  font-size: 1.3vw;
+  text-align: center;
+}
+#main1 #content button {
+  padding: 10px 30px;
+  border: none;
+  background-color: rgb(229, 56, 60);
+  color: white;
+}
+#main2 {
+  background-color: RGB(27, 30, 37);
+  display: flex;
+  height: 120vh;
+}
+#main2 #left {
+  height: 100%;
+  width: 50%;
+  /* border: 1px solid white; */
+  color: white;
+  padding: 80px;
+  font-size: 1.3vw;
+  text-align: justify;
+}
+#main2 #left button {
+  padding: 5px 20px;
+  border-radius: 5px;
+  background-color: rgb(229, 56, 60);
+  color: white;
+  font-size: 20px;
+}
+#main2 #right {
+  padding: 80px;
+  height: 100%;
+  width: 50%;
+  /* border: 1px solid white; */
+  color: white;
+}
+#main2 #right #row {
+  /* border: 1px solid white; */
+  display: flex;
+  margin: 10px;
+}
+#main2 #right #row #profileimg {
+  height: 150px;
+  width: 150px;
+  border: 1px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#main2 #right #row #profileimg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#main2 #right #row #desc {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  line-height: 30px;
+}
+#mask {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: RGB(131, 152, 153);
+}
+#main3 {
+  background-color: RGB(131, 152, 153);
+  text-align: center;
+  padding: 60px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#main3 > div a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 30px;
+  margin: 0px 15px;
+}
+#main3 #content {
+  width: 80%;
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#main3 #content div {
+  height: 50%;
+  width: 50%;
+}
+#main3 #content div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#mask1 {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: rgb(36, 31, 35);
+}
+footer {
+  padding: 50px;
+  text-align: center;
+  height: 60vh;
+  width: 100%;
+  background-color: rgb(36, 31, 35);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+footer form input,
+footer form textarea {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  resize: none;
+  outline: none;
+  border: none;
+  width: 300px;
+}
+footer form input[type="submit"] {
+  padding: 10px 50px;
+  background-color: rgb(229, 56, 60);
+}
+#footer {
+  width: 100%;
+  text-align: right;
+  padding: 15px 20px;
+  background-color: RGB(36, 31, 35);
+  color: white;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
